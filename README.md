@@ -11,6 +11,9 @@ pictures only during the documentation build.  You will be able to do changes
 easily, without committing both diagram sources and pictures and sychronizing
 them manually.
 
+If you want to just quickly convert a nomnoml source file to a picture, you
+can use the [nomnoml-cli] command-line tool, which this task is based on.
+
 ## Installation
 
 You need [node >= 0.12][node], [npm] and [grunt >= 0.4][Grunt] installed
@@ -93,3 +96,4 @@ Licensed under the MIT license.
 [Gruntfile]: http://gruntjs.com/sample-gruntfile
 [Getting Gtarted]: https://github.com/gruntjs/grunt/wiki/Getting-started
 [nomnoml]: http://www.nomnoml.com/
+[nomnoml-cli]: https://github.com/prantlf/nomnoml-cli
