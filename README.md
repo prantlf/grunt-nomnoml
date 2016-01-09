@@ -81,11 +81,13 @@ your code using Grunt.
 
 ## Release History
 
+ * 2016-01-09   v0.1.1   Fix e-mail, update dependencies and copyright
+                         year, bump version number
  * 2015-08-08   v0.1.0   Initial release
 
 ## License
 
-Copyright (c) 2015 Ferdinand Prantl
+Copyright (c) 2015-2016 Ferdinand Prantl
 
 Licensed under the MIT license.
 
