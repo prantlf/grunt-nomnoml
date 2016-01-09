@@ -42,16 +42,22 @@ options of the `grunt.initConfig` method:
 ```js
 grunt.initConfig({
   nomnoml: {
-    all: {
+    one: {
       files: {
         'dist/doc/images/diagram.png': ['doc/images/diagram.nomnoml']
       }
+    },
+    all: {
+      src: ['doc/images/*.nomnoml']
+      dest: 'dist/doc/images'
     }
   }
 });
 ```
 The configuration consists of key-value pairs with the output image path
-as a key pointing to the nomnoml input file.
+as a key pointing to the nomnoml input file.  If you specify more source
+files by wildcards, the destination should be a directory; the source file
+extension wil lbe replaced by "png" in the output file name.
 
 Then, load the plugin:
 
@@ -81,8 +87,8 @@ your code using Grunt.
 
 ## Release History
 
- * 2016-01-09   v0.1.1   Fix e-mail, update dependencies and copyright
-                         year, bump version number
+ * 2016-01-09   v0.2.0   Support wildcards in the source file input
+ * 2016-01-09   v0.1.1   Fix e-mail, update dependencies and copyright year
  * 2015-08-08   v0.1.0   Initial release
 
 ## License
