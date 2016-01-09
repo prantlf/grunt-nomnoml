@@ -87,7 +87,7 @@ your code using Grunt.
 
 ## Release History
 
- * 2016-01-09   v0.2.0   Support wildcards in the source file input
+ * 2016-01-09   v0.2.1   Support wildcards in the source file input
  * 2016-01-09   v0.1.1   Fix e-mail, update dependencies and copyright year
  * 2015-08-08   v0.1.0   Initial release
 

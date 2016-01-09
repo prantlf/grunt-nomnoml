@@ -33,9 +33,9 @@ module.exports = function (grunt) {
           // If multiple source files are specified, the destination
           // path should point to a directory
           var single = file.orig.src.length === 1 &&
-                file.orig.src.findIndex(function (src) {
+                !file.orig.src.some(function (src) {
                   return src.indexOf('*') >= 0 || src.indexOf('?') >= 0;
-                }) < 0,
+                }),
               promises = file.src.map(function (src) {
                 // If the destination is a directory, use the source file name
                 // with the '.png' extension
