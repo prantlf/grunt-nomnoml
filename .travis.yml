@@ -5,16 +5,19 @@ node_js:
     - "5"
 addons:
     apt:
+        sources:
+        - ubuntu-toolchain-r-test
         packages:
-            - libcairo2-dev
-            - libjpeg8-dev
-            - libpango1.0-dev
-            - libgif-dev
-            - build-essential
-            - g++-4.8
+        - libcairo2-dev
+        - libjpeg8-dev
+        - libpango1.0-dev
+        - libgif-dev
+        - build-essential
+        - g++-4.8
 env:
     - CXX=g++-4.8
 before_install:
     - npm install -g npm
 before_script:
     - npm install -g grunt-cli
+sudo: false
