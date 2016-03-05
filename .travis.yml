@@ -3,11 +3,18 @@ node_js:
     - "0.12"
     - "4"
     - "5"
-before_install:
-    - sudo apt-get update -y -qq
-    - sudo apt-get install -y libcairo2-dev libjpeg8-dev libpango1.0-dev libgif-dev build-essential g++-4.8
-    - npm install -g npm
+addons:
+    apt:
+        packages:
+            - libcairo2-dev
+            - libjpeg8-dev
+            - libpango1.0-dev
+            - libgif-dev
+            - build-essential
+            - g++-4.8
 env:
     - CXX=g++-4.8
+before_install:
+    - npm install -g npm
 before_script:
     - npm install -g grunt-cli
