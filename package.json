@@ -29,10 +29,10 @@
     "test": "grunt",
     "check_coverage": "GRUNT_NOMNOML_COVERAGE=1 grunt",
     "post_coverage": "GRUNT_NOMNOML_COVERAGE=1 grunt default coveralls",
-    "semantic-release": "semantic-release pre && npm publish && semantic-release post"
+    "semantic-release": "semantic-release"
   },
   "dependencies": {
-    "nomnoml-cli": "^0.6.1",
+    "nomnoml-cli": "^0.6.6",
     "q": "~2.0.3"
   },
   "devDependencies": {
@@ -45,7 +45,7 @@
     "jshint-stylish": "^2.2.1",
     "load-grunt-tasks": "^3.5.2",
     "time-grunt": "^1.4.0",
-    "semantic-release": "^8.0.0"
+    "semantic-release": "^11.0.2"
   },
   "keywords": [
     "gruntplugin",
