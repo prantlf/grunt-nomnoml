@@ -87,6 +87,7 @@ your code using Grunt.
 
 ## Release History
 
+ * 2018-04-27   v1.0.0   Dropped support of Node.js 4
  * 2017-05-01   v0.3.2   Enable automatic versioning by semantic-release
  * 2016-12-19   v0.3.1   Upgrade dependencies
  * 2016-26-08   v0.3.0   Upgrade to Grunt 1.x
@@ -96,7 +97,7 @@ your code using Grunt.
 
 ## License
 
-Copyright (c) 2015-2016 Ferdinand Prantl
+Copyright (c) 2015-201i8 Ferdinand Prantl
 
 Licensed under the MIT license.
 
