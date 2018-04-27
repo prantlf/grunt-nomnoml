@@ -97,7 +97,7 @@ your code using Grunt.
 
 ## License
 
-Copyright (c) 2015-201i8 Ferdinand Prantl
+Copyright (c) 2015-2018 Ferdinand Prantl
 
 Licensed under the MIT license.
 
