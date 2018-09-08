@@ -2,7 +2,7 @@
   "name": "grunt-nomnoml",
   "description": "Grunt task to generate images from nomnoml diagram sources",
   "version": "0.0.0-development",
-  "homepage": "https://github.com/prantlf/grunt-nomnoml",
+  "homepage": "https://github.com/prantlf/grunt-nomnoml#readme",
   "author": {
     "name": "Ferdinand Prantl",
     "email": "prantlf@gmail.com",
