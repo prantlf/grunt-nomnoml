@@ -31,18 +31,19 @@
     "post_coverage": "GRUNT_NOMNOML_COVERAGE=1 grunt default coveralls"
   },
   "dependencies": {
-    "nomnoml-cli": "^1.0.2",
+    "node-pre-gyp": "0.13.0",
+    "nomnoml-cli": "^2.0.0",
     "q": "~2.0.3"
   },
   "devDependencies": {
-    "grunt": "~1.0.3",
+    "grunt": "~1.0.4",
     "grunt-contrib-clean": "^2.0.0",
-    "grunt-contrib-jshint": "^2.0.0",
+    "grunt-contrib-jshint": "^2.1.0",
     "grunt-contrib-nodeunit": "^2.0.0",
     "grunt-coveralls": "^2.0.0",
     "grunt-istanbul": "^0.8.0",
     "jshint-stylish": "^2.2.1",
-    "load-grunt-tasks": "^4.0.0",
+    "load-grunt-tasks": "^5.1.0",
     "time-grunt": "^2.0.0"
   },
   "keywords": [
