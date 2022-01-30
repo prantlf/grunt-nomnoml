@@ -1,3 +1,10 @@
+# [2.1.0](https://github.com/prantlf/grunt-nomnoml/compare/v2.0.0...v2.1.0) (2022-01-30)
+
+
+### Features
+
+* Allow passing options to nomnoml-cli ([0c64205](https://github.com/prantlf/grunt-nomnoml/commit/0c642050965d7e43565f016c9b06e06e1bb661d1))
+
 # [2.0.0](https://github.com/prantlf/grunt-nomnoml/compare/v1.0.4...v2.0.0) (2022-01-30)
 
 
