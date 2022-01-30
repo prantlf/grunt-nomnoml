@@ -1,19 +1,17 @@
 // grunt-nomnoml
 // https://github.com/prantlf/grunt-nomnoml
 //
-// Copyright (c) 2015 Ferdinand Prantl
+// Copyright (c) 2015-2022 Ferdinand Prantl
 // Licensed under the MIT license.
 //
 // Generates images from nomnoml diagram sources.
 
 'use strict';
 
-var generateDiagram = require('nomnoml-cli'),
-    path = require('path'),
-    Q = require('q');
+const generateDiagram = require('nomnoml-cli');
+const { join, parse, dirname } = require('path');
 
 module.exports = function (grunt) {
-
   function processDiagram(fileSrc, fileDest) {
     try {
       grunt.log.subhead('Processing diagram "' + fileSrc + '"');
@@ -39,15 +37,14 @@ module.exports = function (grunt) {
               promises = file.src.map(function (src) {
                 // If the destination is a directory, use the source file name
                 // with the '.png' extension
-                var dest = single ? file.dest : path.join(file.dest,
-                      path.parse(src).name + '.png'),
-                    dir = path.dirname(dest);
+                const dest = single ? file.dest : join(file.dest, parse(src).name + '.png');
+                const dir = dirname(dest);
                 grunt.file.mkdir(dir);
                 return processDiagram(src, dest);
               });
-          return Q.all(promises);
+          return Promise.all(promises);
         });
-    Q.all(promises)
+    Promise.all(promises)
      .then(done);
   });
 };

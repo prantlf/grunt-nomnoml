@@ -1,16 +1,10 @@
 # grunt-nomnoml
-[![NPM version](https://badge.fury.io/js/grunt-nomnoml.png)](http://badge.fury.io/js/grunt-nomnoml)
-[![Build Status](https://travis-ci.org/prantlf/grunt-nomnoml.png)](https://travis-ci.org/prantlf/grunt-nomnoml)
-[![Coverage Status](https://coveralls.io/repos/prantlf/grunt-nomnoml/badge.svg)](https://coveralls.io/r/prantlf/grunt-nomnoml)
-[![Dependency Status](https://david-dm.org/prantlf/grunt-nomnoml.svg)](https://david-dm.org/prantlf/grunt-nomnoml)
-[![devDependency Status](https://david-dm.org/prantlf/grunt-nomnoml/dev-status.svg)](https://david-dm.org/prantlf/grunt-nomnoml#info=devDependencies)
-[![devDependency Status](https://david-dm.org/prantlf/grunt-nomnoml/peer-status.svg)](https://david-dm.org/prantlf/grunt-nomnoml#info=peerDependencies)
-[![Code Climate](https://codeclimate.com/github/prantlf/grunt-nomnoml/badges/gpa.svg)](https://codeclimate.com/github/prantlf/grunt-nomnoml)
-[![Codacy Badge](https://www.codacy.com/project/badge/f3896e8dfa5342b8add12d50390edfcd)](https://www.codacy.com/public/prantlf/grunt-nomnoml)
-[![Built with Grunt](https://cdn.gruntjs.com/builtwith.png)](http://gruntjs.com/)
-[![semantic-release](https://img.shields.io/badge/%20%20%F0%9F%93%A6%F0%9F%9A%80-semantic--release-e10079.svg)](https://github.com/semantic-release/semantic-release)
 
-[![NPM Downloads](https://nodei.co/npm/grunt-nomnoml.png?downloads=true&stars=true)](https://www.npmjs.com/package/grunt-nomnoml)
+[![Latest version](https://img.shields.io/npm/v/grunt-nomnoml)
+ ![Dependency status](https://img.shields.io/librariesio/release/npm/grunt-nomnoml)
+](https://www.npmjs.com/package/grunt-nomnoml)
+[![codecov](https://codecov.io/gh/prantlf/grunt-nomnoml/branch/master/graph/badge.svg)](https://codecov.io/gh/prantlf/grunt-nomnoml)
+[![Code Climate](https://codeclimate.com/github/prantlf/grunt-nomnoml/badges/gpa.svg)](https://codeclimate.com/github/prantlf/grunt-nomnoml)
 
 This module provides a grunt multi-task generating images from [nomnoml]
 diagram sources.
@@ -26,7 +20,7 @@ can use the [nomnoml-cli] command-line tool, which this task is based on.
 
 ## Installation
 
-You need [node >= 4][node], [npm] and [grunt >= 0.4][Grunt] installed
+You need [node >= 12][node], [npm] and [grunt >= 0.4][Grunt] installed
 and your project build managed by a [Gruntfile] with the necessary modules
 listed in [package.json].  If you haven't used Grunt before, be sure to
 check out the [Getting Started] guide, as it explains how to create a
@@ -95,19 +89,9 @@ In lieu of a formal styleguide, take care to maintain the existing coding
 style.  Add unit tests for any new or changed functionality. Lint and test
 your code using Grunt.
 
-## Release History
-
- * 2018-04-27   v1.0.0   Dropped support of Node.js 4
- * 2017-05-01   v0.3.2   Enable automatic versioning by semantic-release
- * 2016-12-19   v0.3.1   Upgrade dependencies
- * 2016-26-08   v0.3.0   Upgrade to Grunt 1.x
- * 2016-01-09   v0.2.1   Support wildcards in the source file input
- * 2016-01-09   v0.1.1   Fix e-mail, update dependencies and copyright year
- * 2015-08-08   v0.1.0   Initial release
-
 ## License
 
-Copyright (c) 2015-2019 Ferdinand Prantl
+Copyright (c) 2015-2022 Ferdinand Prantl
 
 Licensed under the MIT license.
 
