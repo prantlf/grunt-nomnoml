@@ -15,9 +15,17 @@ module.exports = function (grunt) {
     },
 
     nomnoml: {
-      task: {
+      png: {
         files: {
           'test/piracy.png': ['test/piracy.nomnoml']
+        }
+      },
+      svg: {
+        options: {
+          format: 'svg'
+        },
+        files: {
+          'test/piracy.svg': ['test/piracy.nomnoml']
         }
       }
     },

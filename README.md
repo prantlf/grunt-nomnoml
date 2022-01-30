@@ -52,16 +52,22 @@ grunt.initConfig({
       }
     },
     all: {
+      options: { format: 'svg' },
       src: ['doc/images/*.nomnoml']
       dest: 'dist/doc/images'
     }
   }
 });
 ```
+
 The configuration consists of key-value pairs with the output image path
 as a key pointing to the nomnoml input file.  If you specify more source
 files by wildcards, the destination should be a directory; the source file
-extension wil lbe replaced by "png" in the output file name.
+extension will be replaced by "png" or other one depending on the format
+in the output file name.
+
+The `options` can contain one or more options supported by the [nomnoml-cli API].
+For example, `format` can be `png` (default), `jpg`, `svg` or `pdf`.
 
 Then, load the plugin:
 
@@ -103,3 +109,4 @@ Licensed under the MIT license.
 [Getting Gtarted]: https://github.com/gruntjs/grunt/wiki/Getting-started
 [nomnoml]: http://www.nomnoml.com/
 [nomnoml-cli]: https://github.com/prantlf/nomnoml-cli
+[nomnoml-cli API]: https://github.com/prantlf/nomnoml-cli#programmatic-usage
