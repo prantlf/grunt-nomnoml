@@ -1,3 +1,16 @@
+# [2.0.0](https://github.com/prantlf/grunt-nomnoml/compare/v1.0.4...v2.0.0) (2022-01-30)
+
+
+### Bug Fixes
+
+* Upgrade dependencies ([b65c896](https://github.com/prantlf/grunt-nomnoml/commit/b65c89671fe6ab70a3ad31663a65023f87219a1d))
+
+
+### BREAKING CHANGES
+
+* * The minimum version of Node.js is 12 instead of 8. The `commander` dependency requires at least t
+hat version.
+
 ## 2018-04-27   v1.0.0
 
 Dropped support of Node.js 4
